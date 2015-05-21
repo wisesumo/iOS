@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6724" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="Photog" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="KeX-rS-cZy">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YRW-0S-0jU">
+                    <rect key="frame" x="10" y="492" width="580" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YQd-yN-A6X"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Sign Up">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="didTapSignUp:" destination="-1" eventType="touchUpInside" id="hdb-Oi-8gg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mn5-Om-YJ0">
+                    <rect key="frame" x="10" y="548" width="580" height="44"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Ii5-0P-eFU"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="c3V-Kq-15Z"/>
+                        <constraint firstAttribute="height" constant="44" id="muM-da-G2E"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Sign In">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="didTapSignIn:" destination="-1" eventType="touchUpInside" id="LEs-wU-9ms"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KeX-rS-cZy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1De-K2-PTE"/>
+                <constraint firstItem="YRW-0S-0jU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="I0Y-Ny-OsL"/>
+                <constraint firstAttribute="trailing" secondItem="Mn5-Om-YJ0" secondAttribute="trailing" constant="10" id="IKz-QB-mnr"/>
+                <constraint firstItem="Mn5-Om-YJ0" firstAttribute="top" secondItem="YRW-0S-0jU" secondAttribute="bottom" constant="10" id="K9B-1i-5ll"/>
+                <constraint firstAttribute="trailing" secondItem="YRW-0S-0jU" secondAttribute="trailing" constant="10" id="VYO-fI-Ch1"/>
+                <constraint firstAttribute="trailing" secondItem="KeX-rS-cZy" secondAttribute="trailing" id="Wf8-SS-G5K"/>
+                <constraint firstItem="Mn5-Om-YJ0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="bNx-Dy-6Er"/>
+                <constraint firstItem="KeX-rS-cZy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c7l-Sg-X1g"/>
+                <constraint firstAttribute="bottom" secondItem="Mn5-Om-YJ0" secondAttribute="bottom" constant="10" id="wRX-4e-KtE"/>
+                <constraint firstAttribute="bottom" secondItem="KeX-rS-cZy" secondAttribute="bottom" id="xcM-0Y-K0P"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="StartViewControllerBackground" width="320" height="480"/>
+    </resources>
+</document>
